@@ -18,6 +18,7 @@ class ScheduleFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
 
+
         val rootView = inflater.inflate(R.layout.fragment_schedule, container, false)
 
         return rootView
