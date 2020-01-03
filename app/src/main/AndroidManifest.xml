@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ScheduleDetailSet"></activity>
+        <activity android:name=".ScheduleDetail" />
+        <activity android:name=".ScheduleListSet" />
+        <activity android:name=".ScheduleGroupSet2" />
+        <activity android:name=".ScheduleGroupSet1" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
