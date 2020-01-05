@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.create_company.Create_Company"></activity>
+        <activity android:name=".view.Joining_Work.Joining_Work"></activity>
+        <activity android:name=".view.create_company.Add_Work_Location" />
+        <activity android:name=".view.create_company.Create_Company" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
