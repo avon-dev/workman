@@ -18,7 +18,7 @@ class ScheduleGroupSet1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_schedule_group_set1)
 
-        val colors = arrayOf("최대 근무조 설정","1","2","3","4","5","직접입력")
+        val colors = arrayOf("근무조 설정","1","2","3","4","5","직접입력")
         // Initializing an ArrayAdapter spinner
         val adapter = ArrayAdapter(
             this, // Context
