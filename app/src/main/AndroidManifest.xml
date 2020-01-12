@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ReqvacationActivity"></activity>
+        <activity android:name=".DetailvacaActivity" />
+        <activity
+            android:name=".test"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".VacationActivity" />
+        <activity android:name=".EmployeeActivity" />
+        <activity android:name=".CompanyprofileActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity android:name=".MyprofileActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
