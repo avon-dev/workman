@@ -7,6 +7,22 @@
     android:orientation="vertical"
     tools:context=".view.select_company.Select_company">
 
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#7FC4A6"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/set_date"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="회사 선택"-->
+<!--            android:textColor="@android:color/white"-->
+<!--            android:textSize="17sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </androidx.appcompat.widget.Toolbar>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

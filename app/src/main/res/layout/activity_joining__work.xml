@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.Joining_Work.Joining_Work">
+    tools:context=".view.Joining_Work.Joining_Work"
+    android:background="@android:color/white">
 
     <TextView
         android:id="@+id/textView6"
