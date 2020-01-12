@@ -12,11 +12,7 @@ import es.dmoral.toasty.Toasty
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(),ILoginView {
-
-
-
-
-    internal lateinit var loginPresenter: ILoginPresenter
+    private lateinit var loginPresenter: ILoginPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,21 +21,23 @@ class LoginActivity : AppCompatActivity(),ILoginView {
         //init
         loginPresenter = LoginPresenter(this)
 
-        //event
+        //로그인 버튼 클릭event
         login_btn.setOnClickListener{
             loginPresenter.onLogin(login_email.text.toString(),login_password.text.toString())
-
-
-
         }
 
+        register_btn.setOnClickListener {
+            val registerIntent = Intent(this,
+                RegisterActivity::class.java)
+            startActivity(registerIntent)
+        }
     }
 
     //로그인 성공시 홈화면으로 이동
     override fun onLoginSuccess(message: String) {
               Toasty.success(this,message,Toast.LENGTH_SHORT).show()
-        val loginIntent = Intent(this,MainActivity::class.java)
-        startActivity(loginIntent)
+        val HomeIntent = Intent(this,MainActivity::class.java)
+        startActivity(HomeIntent)
     }
     //로그인 실패시 에러 메시지 작동
     override fun onLoginError(message: String) {

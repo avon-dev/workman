@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".View.LoginActivity"></activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".View.RegisterActivity" />
         <activity android:name=".StartPageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
