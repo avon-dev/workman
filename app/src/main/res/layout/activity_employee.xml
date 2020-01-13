@@ -33,27 +33,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/E_active"
+        android:id="@+id/E_activebutton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:background="@drawable/bottomline"
         android:text="현재 직원"
-        app:layout_constraintEnd_toStartOf="@id/E_passive"
+        app:layout_constraintEnd_toStartOf="@id/E_passivebutton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/E_searchbutton" />
 
     <Button
-        android:id="@+id/E_passive"
+        android:id="@+id/E_passivebutton"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="0dp"
         android:layout_height="40dp"
-        android:background="null"
+        android:background="@null"
         android:text="비활성 직원"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/E_active"
+        app:layout_constraintStart_toEndOf="@+id/E_activebutton"
         app:layout_constraintTop_toBottomOf="@id/E_searchbutton" />
 
     <View
@@ -62,7 +62,7 @@
         android:layout_height="1dp"
         android:background="@color/gray2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/E_active" />
+        app:layout_constraintTop_toBottomOf="@id/E_activebutton" />
 
     <FrameLayout
         android:id="@+id/E_container"
