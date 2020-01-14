@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.workman">
 
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,30 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".view.Create_Alarm.Create_Alarm">
-        </activity>
-        <activity android:name=".view.select_company.Select_company" >
-        </activity>
-        <activity android:name=".view.Joining_Work.Joining_Work" />
-        <activity android:name=".view.create_company.Add_Work_Location">
-        </activity>
-        <activity android:name=".view.create_company.Create_Company" />
-        <activity android:name=".view.main.MainActivity">
 
-             <intent-filter>
-             <action android:name="android.intent.action.MAIN" />
-
-
-             <category android:name="android.intent.category.LAUNCHER" />
-             </intent-filter>
-        </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCjGm-3OFR4HVgfweklMJMHUwwf_z-KGSk" />
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
     </application>
 
 </manifest>
