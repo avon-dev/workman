@@ -15,12 +15,6 @@
         <activity android:name=".view.Create_Alarm.Create_Alarm">
         </activity>
         <activity android:name=".view.select_company.Select_company" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".view.Joining_Work.Joining_Work" />
         <activity android:name=".view.create_company.Add_Work_Location">
@@ -28,12 +22,12 @@
         <activity android:name=".view.create_company.Create_Company" />
         <activity android:name=".view.main.MainActivity">
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
 
 
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
 
         <meta-data
