@@ -2,6 +2,9 @@ package com.example.workman
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.workman.decorator.RangeDayDecorator
+import com.example.workman.decorator.SaturdayDecorator
+import com.example.workman.decorator.SundayDecorator
 import com.prolificinteractive.materialcalendarview.CalendarDay
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView.*
@@ -15,23 +18,31 @@ class ReqvacationActivity : AppCompatActivity(), OnDateSelectedListener, OnRange
         date: CalendarDay,
         selected: Boolean
     ) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onRangeSelected(widget: MaterialCalendarView, dates: MutableList<CalendarDay>) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        if (dates.size > 0) {
+            rangeDayDecorator.addFirstAndLast(dates[0], dates[dates.size - 1]);
+            RV_calendarView.invalidateDecorators();
+        }
     }
 
-    private val sundayDecorator:SundayDecorator = SundayDecorator()
-    private val saturdayDecorator:SaturdayDecorator = SaturdayDecorator()
+    private val sundayDecorator: SundayDecorator =
+        SundayDecorator()
+    private val saturdayDecorator: SaturdayDecorator =
+        SaturdayDecorator()
+    private val rangeDayDecorator: RangeDayDecorator =
+        RangeDayDecorator(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reqvacation)
 
-        RV_calendarView.selectionMode = SELECTION_MODE_RANGE
-        RV_calendarView.addDecorators(sundayDecorator,saturdayDecorator)
+        RV_calendarView.selectionMode = SELECTION_MODE_MULTIPLE
+        RV_calendarView.addDecorators(sundayDecorator, saturdayDecorator,rangeDayDecorator)
         RV_calendarView.setOnRangeSelectedListener(this)
         RV_calendarView.setOnDateChangedListener(this)
+        RV_calendarView.isDynamicHeightEnabled = true
     }
 }
