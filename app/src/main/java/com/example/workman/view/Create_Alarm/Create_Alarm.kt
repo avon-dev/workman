@@ -24,7 +24,7 @@ class Create_Alarm : AppCompatActivity() {
         ab.setDisplayShowTitleEnabled(false)
         ab.setDisplayHomeAsUpEnabled(true)  // 뒤로가기 버튼 추가.
 
-        //체크박스 체크시 나오는 아이템 설정.
+        // 원하는 알람을 체크했을때 다른 알람 아이템들 화면에 나오게한다.
         checkBox_Day_of_week_repeat.setOnClickListener {
             if (checkBox_Day_of_week_repeat.isChecked){
                 checkBox_Working_hours_alarm.isChecked = false
