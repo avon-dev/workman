@@ -23,7 +23,6 @@ class ScheduleFragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_schedule, container, false)
 
         // 플로팅액션버튼
-
         // 근무조 설정
         rootView.f_schedule_Floating_menu_item1.setOnClickListener {
             val nextIntent = Intent(activity, ScheduleGroupSet1::class.java)
