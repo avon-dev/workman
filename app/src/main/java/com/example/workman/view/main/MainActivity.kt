@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         var selectedFragment: Fragment? = null
 
-        when(it.itemId) {
+        when (it.itemId) {
             R.id.navigation_home -> selectedFragment =
                 HomeFragment()
             R.id.navigation_schedule -> selectedFragment =
@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         true
 
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
