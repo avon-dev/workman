@@ -31,7 +31,7 @@ class ScheduleFragment : Fragment() {
 
         //근무리스트 설정
         rootView.f_schedule_Floating_menu_item2.setOnClickListener {
-            val nextIntent = Intent(activity, ScheduleListSet::class.java)
+            val nextIntent = Intent(activity, ScheduleDetail::class.java)
             startActivity(nextIntent)
         }
 
